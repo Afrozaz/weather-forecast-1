@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather Info Card (Static)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="weather-card" id="card">
+    <div id="bg" class="bg-transition"></div>
+
+    <div class="top">
+      <div class="icon" id="icon">☀️</div>
+      <div>
+        <div class="location" id="location">Unknown</div>
+        <div class="small" id="subtitle">Static Weather Demo</div>
+      </div>
+    </div>
+
+    <div class="temp" id="temp">--°C</div>
+    <div class="condition"><span id="condLabel">--</span></div>
+
+    <div class="meta">
+      <div class="item" id="humidity">💧 --%</div>
+      <div class="item" id="wind">🌬️ -- km/h</div>
+    </div>
+
+    <div class="controls">
+      <button class="btn" id="refresh">🔄 Refresh</button>
+      <button class="btn btn--primary" id="randomize">Surprise Me</button>
+    </div>
+
+    <div class="note" id="note">Static data only — no tracking, no API.</div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
